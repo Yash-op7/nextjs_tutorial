@@ -40,5 +40,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Points learned:
 
-* npx create-next-app
-* ESLint - a common code analysis tool that we can use to find syntax errors, formatting issues and so on
+1. npx create-next-app
+2. ESLint - a common code analysis tool that we can use to find syntax errors, formatting issues and so on
+3. In next js we dont have to set up a router, instead the router is configured as the file system, the app folder contains the router system of our application
+4. the layout.tsx in app/ represents the common layout for our page, inside it the body element we have children which is dynamically replaced by where the user is in our application.
+5. app/ also has a home page which represents the home page
+6. to make a new route like localhost:3000/users, we make a new folder in app/ called users and to make this folder known to next.js routing and make it publicly accessible we make a `page.tsx` file here
