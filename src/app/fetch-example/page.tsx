@@ -12,7 +12,7 @@ const DataFetchExample = async () => {
   return (
     <div>
       <ul>
-        {users.map(user => <li key={user.id}>{user.name}</li>)}
+        {users.map(user => <li className='font-mono text-grey-900 underline decoration-sky-500' key={user.id}>{user.name}</li>)}
       </ul>
     </div>
   )
